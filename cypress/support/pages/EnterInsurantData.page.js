@@ -10,11 +10,11 @@ const BTN_NEXT = '#nextenterproductdata'
 
 Cypress.Commands.add('preencheCamposEnterInsurantData', () => {
     cy.get(ABA_ENTER_INSURANT_DATA).click()
-    cy.get(INPUT_FIRSTNAME).type('Maria')
-    cy.get(INPUT_LASTNAME).type('Borges')
-    cy.get(INPUT_BIRTHDATE).type('11/09/1995')
+    cy.get(INPUT_FIRSTNAME).type(Cypress.env('firstName'))
+    cy.get(INPUT_LASTNAME).type(Cypress.env('lastName'))
+    cy.get(INPUT_BIRTHDATE).type(Cypress.env('birthDate'))
     cy.get(SELECT_COUNTRY).select(1)
-    cy.get(INPUT_ZIPCODE).type('12345678')
+    cy.get(INPUT_ZIPCODE).type(Cypress.env('zipCode'))
     cy.get(SELECT_OCUUPATION).select(1)
     cy.get(LBL_HOBBIE).click()
     cy.get(BTN_NEXT).click()
