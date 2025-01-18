@@ -26,3 +26,7 @@ Cypress.Commands.add('submeterFomulario', () => {
 Cypress.Commands.add('validarEnvioComSucesso', () => {
     cy.contains('Sending e-mail success').should('be.visible');
 })
+
+Cypress.Commands.add('validarBotaoNaoEstaVisivel', () => {
+    cy.get(BTN_SEND_EMAIL).should('not.be.visible')
+})

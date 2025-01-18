@@ -30,3 +30,14 @@ Cypress.Commands.add('preencheCamposEnterProductData', () => {
     cy.get(SELECT_COURTESY_CAR).select(1)
     cy.get(BTN_NEXT).click()
 })
+
+Cypress.Commands.add('naoPreencheTodosCamposEnterProductData', () => {
+    cy.get(ABA_ENTER_PRODUCT_DATA).click()
+    cy.get(INPUT_START_DATE).type(futureDate())
+    cy.get(INPUT_INSURANCE_SUM).select(1)
+    cy.get(INPUT_MERIT_RATING).select(1)
+    cy.get(INPUT_DAMAGE_INSURANCE).select(1)
+    // cy.get(LBL_OPTIONAL_PRODUCT).click() -- Comentado para simular que o campo não foi preenchido
+    cy.get(SELECT_COURTESY_CAR).select(1)
+    cy.get(BTN_NEXT).click()
+})
