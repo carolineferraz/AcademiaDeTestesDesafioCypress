@@ -8,13 +8,13 @@
 <h3>🎯 Objetivo:</h3>
 <p>Criar uma estrutura de automação em Cypress que atenda aos seguintes requsitos:</P>
 
-✅ Portal http://sampleapp.tricentis.com/101/app.php
-✅ Desenvolver feature contemplando todas as abas
-✅ Automação no padrão Page Objects
-✅ Escrita das features na linguagem Gherkin
-✅ Dados sensíveis no arquivo Cypress.env
-✅ Pelo menos 2 cenários, 1 positivo e 1 negativo, com suas devidas validações
-✅ Difecerencial postar projeto no GitHub e enviar o link
+<p>✅ Portal http://sampleapp.tricentis.com/101/app.php</p>
+<p>✅ Desenvolver feature contemplando todas as abas</p>
+<p>✅ Automação no padrão Page Objects</p>
+<p>✅ Escrita das features na linguagem Gherkin</p>
+<p>✅ Dados sensíveis no arquivo Cypress.env</p>
+<p>✅ Pelo menos 2 cenários, 1 positivo e 1 negativo, com suas devidas validações</p>
+<p>✅ Difecerencial postar projeto no GitHub e enviar o link</p>
 
 <h3>🔧 Tecnologias utilizadas:</h3>
 <p align="center">
