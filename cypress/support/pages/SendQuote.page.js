@@ -23,6 +23,6 @@ Cypress.Commands.add('submeterFomulario', () => {
     })
 })
 
-Cypress.Commands.add('validarAddToCartVisivel', () => {
+Cypress.Commands.add('validarEnvioComSucesso', () => {
     cy.contains('Sending e-mail success').should('be.visible');
 })
