@@ -14,7 +14,7 @@
 <p>✅ Escrita das features na linguagem Gherkin</p>
 <p>✅ Dados sensíveis no arquivo Cypress.env</p>
 <p>✅ Pelo menos 2 cenários, 1 positivo e 1 negativo, com suas devidas validações</p>
-<p>✅ Difecerencial postar projeto no GitHub e enviar o link</p>
+<p>✅ Diferencial postar projeto no GitHub e enviar o link</p>
 <hr>
 <h3>🔧 Tecnologias utilizadas:</h3>
 <p align="center">
