@@ -7,10 +7,10 @@ const BTN_SEND_EMAIL = '#sendemail'
 
 Cypress.Commands.add('preencheCamposSendQuote', () => {
     cy.get(ABA_SEND_QUOTE).click()
-    cy.get(INPUT_EMAIL).type('caroline8@email.com')
-    cy.get(INPUT_USERNAME).type('caroline')
-    cy.get(INPUT_PASSWORD).type('qwE123#')
-    cy.get(INPUT_CONFIRM_PASSWORD).type('qwE123#')
+    cy.get(INPUT_EMAIL).type(Cypress.env('email'))
+    cy.get(INPUT_USERNAME).type(Cypress.env('username'))
+    cy.get(INPUT_PASSWORD).type(Cypress.env('password'))
+    cy.get(INPUT_CONFIRM_PASSWORD).type(Cypress.env('confirmPassword'))
 })
 
 Cypress.Commands.add('submeterFomulario', () => {
