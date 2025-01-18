@@ -26,6 +26,6 @@ And('clico no botão para enviar o formulário', () => {
     cy.submeterFomulario()
 })
 
-/*Then('mensagem é exibida informando que formulário foi enviado com sucesso', () => {
+Then('mensagem é exibida informando que formulário foi enviado com sucesso', () => {
     cy.validarAddToCartVisivel()
-})*/
+})

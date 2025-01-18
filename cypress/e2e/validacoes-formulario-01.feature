@@ -10,4 +10,4 @@ Funcionalidade: Preenchimento e Envio de Formulário - Portal Tricentis
         E preencho os campos obrigatórios da aba Select Price Option
         E preencho os campos obrigatórios da aba Send Quote
         E clico no botão para enviar o formulário
-        # Então mensagem é exibida informando que formulário foi enviado com sucesso
+        Então mensagem é exibida informando que formulário foi enviado com sucesso

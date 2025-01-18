@@ -7,7 +7,7 @@ const BTN_SEND_EMAIL = '#sendemail'
 
 Cypress.Commands.add('preencheCamposSendQuote', () => {
     cy.get(ABA_SEND_QUOTE).click()
-    cy.get(INPUT_EMAIL).type('caroline7@email.com')
+    cy.get(INPUT_EMAIL).type('caroline8@email.com')
     cy.get(INPUT_USERNAME).type('caroline')
     cy.get(INPUT_PASSWORD).type('qwE123#')
     cy.get(INPUT_CONFIRM_PASSWORD).type('qwE123#')
@@ -21,4 +21,8 @@ Cypress.Commands.add('submeterFomulario', () => {
     cy.wait('@postQuote', { timeout: 60000 }).then((interception) => {
         expect(interception.response.statusCode).to.equal(200)
     })
+})
+
+Cypress.Commands.add('validarAddToCartVisivel', () => {
+    cy.contains('Sending e-mail success').should('be.visible');
 })
